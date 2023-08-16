@@ -17,7 +17,19 @@ public class ArrayPractice {
             }
         }
 
+        System.out.println("");
+
         String myString = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
+
+        String[] stringArray =  myString.split("(\\p{P}* |\\p{P})");
+
+        System.out.println(Arrays.toString(stringArray));
+
+        System.out.println("");
+
+        String[] sentences = myString.split("\\.");
+
+        System.out.println(Arrays.toString(sentences));
 
     }
 
