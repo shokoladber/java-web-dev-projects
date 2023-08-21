@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,17 +11,17 @@ public class CharacterCounts {
 
         char[] charactersInString = snippet.toCharArray();
 
-        HashMap<Character, Integer> charCounter = new HashMap();
+        HashMap<Character, Integer> charCounter = new HashMap<>();
 
-        for(char character : charactersInString){
+        for(Character character : charactersInString){
             if(charCounter.containsKey(character)){
-                charCounter.put(character, charCounter.get(character) +1);
+                charCounter.put(character, charCounter.get(character)+1);
             } else {
                 charCounter.put(character, 1);
             }
         }
 
-        for(Map.Entry<Character, Integer> entry : charCounter.entrySet()){
+        for(Map.Entry<Character, Integer> entry : charCounter .entrySet()){
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
     }
