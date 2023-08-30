@@ -31,6 +31,7 @@ class BalancedBracketsTest {
     @Test
     public void reversedBracketsReturnsFalse(){
         assertFalse(BalancedBrackets.hasBalancedBrackets("]["));
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[]]["));
     }
 
 //    These strings have balanced brackets:
